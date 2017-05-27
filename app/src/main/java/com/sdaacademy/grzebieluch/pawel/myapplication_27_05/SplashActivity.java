@@ -24,24 +24,8 @@ private int time = 3000;
     }
 
 
-    protected WelcomeConfiguration configuration() {
-        return new WelcomeConfiguration.Builder(this)
-                .defaultBackgroundColor(R.color.colorAccent)
-                .page(new TitlePage(R.drawable.logo,
-                        "Title")
-                )
-                .page(new BasicPage(R.drawable.image,
-                        "Header",
-                        "More text.")
-                        .background(R.color.red_background)
-                )
-                .page(new BasicPage(R.drawable.image,
-                        "Lorem ipsum",
-                        "dolor sit amet.")
-                )
-                .swipeToDismiss(true)
-                .build();
-    }
+
+
     private void splash(int time) {
         new Handler().postDelayed(new Runnable() {
             @Override
