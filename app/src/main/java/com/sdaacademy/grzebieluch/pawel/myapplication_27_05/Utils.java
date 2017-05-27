@@ -16,20 +16,18 @@ public class Utils {
 
 
     }
+    //sprawdzamy czy uzytkownik przy hasle podał ponad 6 znaków
+    public static boolean isPasswordValid(String password) {
+        return password.length() > 6;
+    }
+    //sprawdzanie czy posiadamy dostep do internetu
+    static boolean checkInternetConnection(Context context) {
+        ConnectivityManager cm =
+                (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = cm.getActiveNetworkInfo();
+        return netInfo != null && netInfo.isConnectedOrConnecting();
+    }
 
-    public static boolean isEmailLengthValid(String email) {
-        int beginIndex = 0;
-        for (int i = 0; i < email.length(); i++) {
-            if (email.charAt(i) == '@') {
-                beginIndex = i;
-            }
-        }
-        return beginIndex>6;
-    }
-    private boolean isNetworkAvailable() {
-        ConnectivityManager connectivityManager
-                = (ConnectivityManager) mContext.getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
-        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
-    }
+
+
 }
