@@ -1,5 +1,6 @@
 package com.sdaacademy.grzebieluch.pawel.myapplication_27_05;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -46,7 +47,11 @@ public class RegisterActivity extends AppCompatActivity {
             presenter = new RegisterPresenter();
         }
     }
-
+@OnClick(R.id.textViewSignin)
+public void singInUser(){
+    finish();
+    startActivity(new Intent(getApplicationContext(),LoginActivity.class));
+}
     @OnClick(R.id.buttonRegister)
     public void createUser(){
         String email = etEmail.getText().toString().toLowerCase().trim();
