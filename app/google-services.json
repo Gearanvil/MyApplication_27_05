@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "890737648334",
+    "firebase_url": "https://sdafirebase.firebaseio.com",
+    "project_id": "sdafirebase",
+    "storage_bucket": "sdafirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890737648334:android:894e214f463292ab",
+        "android_client_info": {
+          "package_name": "com.sdaacademy.grzebieluch.pawel.myapplication_27_05"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "890737648334-784v43ocmfvv31587cks2gvhup3dnr76.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_Zj6sOqfdUHiqNxGd1qAK0q86ayeCCbs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
